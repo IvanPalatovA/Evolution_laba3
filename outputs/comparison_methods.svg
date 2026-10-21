@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="400" viewBox="0 0 880 400">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<style>
+text { font-family: "Segoe UI", Arial, sans-serif; font-size: 12px; fill: #2c3e50; }
+.title { font-size: 15px; font-weight: bold; fill: #1a252f; text-anchor: middle; }
+.panel-title { font-size: 13px; font-weight: bold; fill: #34495e; text-anchor: middle; }
+.bar-val { font-size: 11px; font-weight: bold; fill: #2c3e50; text-anchor: middle; }
+.axis { stroke: #2c3e50; stroke-width: 1.2; }
+.grid { stroke: #ecf0f1; stroke-width: 1; stroke-dasharray: 2,2; }
+</style>
+<text class="title" x="440.0" y="25">Сравнение методов оптимизации недельного меню при равном бюджете вычислений</text>
+<text class="panel-title" x="180.0" y="55">Hypervolume (больше — лучше)</text>
+<rect x="60" y="65" width="240" height="260" fill="#fcfdfe" stroke="#e1e4e8"/>
+<line class="grid" x1="60" y1="325.0" x2="300" y2="325.0"/>
+<text x="54" y="329.0" text-anchor="end" font-size="10">0.000</text>
+<line class="grid" x1="60" y1="260.0" x2="300" y2="260.0"/>
+<text x="54" y="264.0" text-anchor="end" font-size="10">0.138</text>
+<line class="grid" x1="60" y1="195.0" x2="300" y2="195.0"/>
+<text x="54" y="199.0" text-anchor="end" font-size="10">0.275</text>
+<line class="grid" x1="60" y1="130.0" x2="300" y2="130.0"/>
+<text x="54" y="134.0" text-anchor="end" font-size="10">0.413</text>
+<line class="grid" x1="60" y1="65.0" x2="300" y2="65.0"/>
+<text x="54" y="69.0" text-anchor="end" font-size="10">0.550</text>
+<rect x="82" y="99.52516363636366" width="46" height="225.47483636363634" fill="#2980b9" rx="3"/>
+<text class="bar-val" x="105.0" y="93.52516363636366">0.477</text>
+<text x="105.0" y="343" text-anchor="middle" font-weight="bold">NSGA-II</text>
+<rect x="152" y="105.89219819247666" width="46" height="219.10780180752334" fill="#e67e22" rx="3"/>
+<text class="bar-val" x="175.0" y="99.89219819247666">0.463</text>
+<text x="175.0" y="343" text-anchor="middle" font-weight="bold">WSGA</text>
+<rect x="222" y="137.6092554495638" width="46" height="187.3907445504362" fill="#95a5a6" rx="3"/>
+<text class="bar-val" x="245.0" y="131.6092554495638">0.396</text>
+<text x="245.0" y="343" text-anchor="middle" font-weight="bold">Random</text>
+<line class="axis" x1="60" y1="325" x2="300" y2="325"/>
+<line class="axis" x1="60" y1="65" x2="60" y2="325"/>
+<text class="panel-title" x="475.0" y="55">Равномерность Spacing (меньше — лучше)</text>
+<rect x="355" y="65" width="240" height="260" fill="#fcfdfe" stroke="#e1e4e8"/>
+<line class="grid" x1="355" y1="325.0" x2="595" y2="325.0"/>
+<text x="349" y="329.0" text-anchor="end" font-size="10">0.0</text>
+<line class="grid" x1="355" y1="260.0" x2="595" y2="260.0"/>
+<text x="349" y="264.0" text-anchor="end" font-size="10">35.0</text>
+<line class="grid" x1="355" y1="195.0" x2="595" y2="195.0"/>
+<text x="349" y="199.0" text-anchor="end" font-size="10">70.0</text>
+<line class="grid" x1="355" y1="130.0" x2="595" y2="130.0"/>
+<text x="349" y="134.0" text-anchor="end" font-size="10">105.0</text>
+<line class="grid" x1="355" y1="65.0" x2="595" y2="65.0"/>
+<text x="349" y="69.0" text-anchor="end" font-size="10">140.0</text>
+<rect x="377" y="293.4582857142857" width="46" height="31.54171428571429" fill="#2980b9" rx="3"/>
+<text class="bar-val" x="400.0" y="287.4582857142857">17.0</text>
+<text x="400.0" y="343" text-anchor="middle" font-weight="bold">NSGA-II</text>
+<rect x="447" y="104.263772122831" width="46" height="220.736227877169" fill="#e67e22" rx="3"/>
+<text class="bar-val" x="470.0" y="98.263772122831">118.9</text>
+<text x="470.0" y="343" text-anchor="middle" font-weight="bold">WSGA</text>
+<rect x="517" y="289.10711471097676" width="46" height="35.892885289023226" fill="#95a5a6" rx="3"/>
+<text class="bar-val" x="540.0" y="283.10711471097676">19.3</text>
+<text x="540.0" y="343" text-anchor="middle" font-weight="bold">Random</text>
+<line class="axis" x1="355" y1="325" x2="595" y2="325"/>
+<line class="axis" x1="355" y1="65" x2="355" y2="325"/>
+<text class="panel-title" x="770.0" y="55">Число решений на фронте Парето</text>
+<rect x="650" y="65" width="240" height="260" fill="#fcfdfe" stroke="#e1e4e8"/>
+<line class="grid" x1="650" y1="325.0" x2="890" y2="325.0"/>
+<text x="644" y="329.0" text-anchor="end" font-size="10">0</text>
+<line class="grid" x1="650" y1="260.0" x2="890" y2="260.0"/>
+<text x="644" y="264.0" text-anchor="end" font-size="10">30</text>
+<line class="grid" x1="650" y1="195.0" x2="890" y2="195.0"/>
+<text x="644" y="199.0" text-anchor="end" font-size="10">60</text>
+<line class="grid" x1="650" y1="130.0" x2="890" y2="130.0"/>
+<text x="644" y="134.0" text-anchor="end" font-size="10">90</text>
+<line class="grid" x1="650" y1="65.0" x2="890" y2="65.0"/>
+<text x="644" y="69.0" text-anchor="end" font-size="10">120</text>
+<rect x="672" y="108.33333333333331" width="46" height="216.66666666666669" fill="#2980b9" rx="3"/>
+<text class="bar-val" x="695.0" y="102.33333333333331">100</text>
+<text x="695.0" y="343" text-anchor="middle" font-weight="bold">NSGA-II</text>
+<rect x="742" y="294.6666666666667" width="46" height="30.333333333333332" fill="#e67e22" rx="3"/>
+<text class="bar-val" x="765.0" y="288.6666666666667">14</text>
+<text x="765.0" y="343" text-anchor="middle" font-weight="bold">WSGA</text>
+<rect x="812" y="156.0" width="46" height="169.0" fill="#95a5a6" rx="3"/>
+<text class="bar-val" x="835.0" y="150.0">78</text>
+<text x="835.0" y="343" text-anchor="middle" font-weight="bold">Random</text>
+<line class="axis" x1="650" y1="325" x2="890" y2="325"/>
+<line class="axis" x1="650" y1="65" x2="650" y2="325"/>
+</svg>

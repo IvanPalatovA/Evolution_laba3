@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="520" viewBox="0 0 920 520">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+<path d="M 0 1 L 8 5 L 0 9 z" fill="#2c3e50"/>
+</marker>
+</defs>
+<style>
+text { font-family: "Segoe UI", Arial, sans-serif; font-size: 12px; fill: #2c3e50; }
+.header { font-size: 16px; font-weight: bold; fill: #1a252f; text-anchor: middle; }
+.box { fill: #f8f9fa; stroke: #2980b9; stroke-width: 1.6; rx: 6; }
+.box-accent { fill: #ebf5fb; stroke: #1b4f72; stroke-width: 2.0; rx: 6; }
+.box-decision { fill: #fef9e7; stroke: #d35400; stroke-width: 1.8; }
+.box-title { font-weight: bold; font-size: 12px; fill: #1a252f; text-anchor: middle; }
+.box-desc { font-size: 10.5px; fill: #566573; text-anchor: middle; }
+.flow-line { stroke: #2c3e50; stroke-width: 1.5; fill: none; marker-end: url(#arrow); }
+</style>
+<text class="header" x="460.0" y="28">Блок-схема генетического алгоритма NSGA-II (Вариант 6: Меню на неделю)</text>
+<rect class="box" x="50" y="60" width="230" height="50"/>
+<text class="box-title" x="165.0" y="80">1. Инициализация P_0 (N=100)</text>
+<text class="box-desc" x="165.0" y="97">21 слот: случайный выбор блюд по категориям</text>
+<rect class="box" x="50" y="140" width="230" height="50"/>
+<text class="box-title" x="165.0" y="160">2. Оценивание критериев</text>
+<text class="box-desc" x="165.0" y="177">f1 (стоимость), f2 (нутриенты), f3 (монотонность)</text>
+<rect class="box-accent" x="50" y="220" width="230" height="54"/>
+<text class="box-title" x="165.0" y="240">3. Недоминируемая сортировка</text>
+<text class="box-desc" x="165.0" y="257">Деление P_0 на фронты F1, F2, ... и crowding distance</text>
+<rect class="box" x="50" y="305" width="230" height="50"/>
+<text class="box-title" x="165.0" y="325">4. Внешний архив Парето</text>
+<text class="box-desc" x="165.0" y="342">Сохранение всех найденных решений F1</text>
+<rect class="box" x="345" y="60" width="230" height="50"/>
+<text class="box-title" x="460.0" y="80">5. Турнирная селекция</text>
+<text class="box-desc" x="460.0" y="97">Турнир k=2 по рангу и crowding distance</text>
+<rect class="box" x="345" y="140" width="230" height="50"/>
+<text class="box-title" x="460.0" y="160">6. Кроссовер (p=0.90)</text>
+<text class="box-desc" x="460.0" y="177">Однородный / суточный с сохранением слотов</text>
+<rect class="box" x="345" y="220" width="230" height="54"/>
+<text class="box-title" x="460.0" y="240">7. Специализированная мутация</text>
+<text class="box-desc" x="460.0" y="257">Замена блюда, swap дней, разрушение монотонности</text>
+<rect class="box" x="345" y="305" width="230" height="50"/>
+<text class="box-title" x="460.0" y="325">8. Оценка потомков Q_t (N)</text>
+<text class="box-desc" x="460.0" y="342">Расчет f1, f2, f3 для N новых особей</text>
+<rect class="box" x="640" y="60" width="230" height="50"/>
+<text class="box-title" x="755.0" y="80">9. Объединение R_t = P_t U Q_t</text>
+<text class="box-desc" x="755.0" y="97">Пул из 2N особей (родители + потомки)</text>
+<rect class="box-accent" x="640" y="140" width="230" height="54"/>
+<text class="box-title" x="755.0" y="160">10. Быстрая сортировка 2N</text>
+<text class="box-desc" x="755.0" y="177">Разбиение на фронты Парето F1, F2, ...</text>
+<rect class="box" x="640" y="225" width="230" height="60"/>
+<text class="box-title" x="755.0" y="245">11. Элитарный отбор P_{t+1}</text>
+<text class="box-desc" x="755.0" y="262">Заполнение фронтами F_i; обрезка по crowding distance</text>
+<rect class="box-decision" x="640" y="320" width="230" height="52"/>
+<text class="box-title" x="755.0" y="340">12. Критерий останова?</text>
+<text class="box-desc" x="755.0" y="357">t == 150 поколений</text>
+<rect class="box-accent" x="640" y="420" width="230" height="50"/>
+<text class="box-title" x="755.0" y="440">13. Итоговый фронт Парето</text>
+<text class="box-desc" x="755.0" y="457">Множество компромиссных недельных меню</text>
+<path class="flow-line" d="M 165 110 L 165 140"/>
+<path class="flow-line" d="M 165 190 L 165 220"/>
+<path class="flow-line" d="M 165 274 L 165 305"/>
+<path class="flow-line" d="M 280 245 L 345 85"/>
+<path class="flow-line" d="M 460 110 L 460 140"/>
+<path class="flow-line" d="M 460 190 L 460 220"/>
+<path class="flow-line" d="M 460 274 L 460 305"/>
+<path class="flow-line" d="M 575 330 L 640 85"/>
+<path class="flow-line" d="M 755 110 L 755 140"/>
+<path class="flow-line" d="M 755 194 L 755 225"/>
+<path class="flow-line" d="M 755 285 L 755 320"/>
+<path class="flow-line" d="M 755 372 L 755 420"/>
+<path class="flow-line" d="M 640 346 L 610 346 L 610 35 L 460 35 L 460 60"/>
+<text x="618" y="340" font-size="10" font-weight="bold" fill="#c0392b">Нет</text>
+<text x="765" y="402" font-size="10" font-weight="bold" fill="#27ae60">Да</text>
+</svg>
